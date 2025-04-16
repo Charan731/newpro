@@ -1,1 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: white; /* Set header background to white */
+  color: #333; /* Ensure text is visible on white background */
+  position: relative;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
+}
+
+.logo img {
+  height: 110px;
+  background-color: white; /* Ensure logo background is white */
+  padding: 5px; /* Add padding around the logo */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.nav-items {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background-color: white; /* Set button background to white */
+  border: 1px solid #ccc; /* Add a subtle border for better visibility */
+  color: #333; /* Ensure text is visible on white background */
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.nav-btn:hover {
+  background-color: #f0f0f0; /* Slightly darker background on hover */
+  color: #000; /* Darker text color on hover */
+  text-decoration: none;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.hover-box {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: calc(50% - 50mm); /* Move 20mm more to the left (30mm + 20mm = 50mm) */
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: white;
+  color: #333;
+  padding: 25px;
+  width: 95vw; /* Adjusted width */
+  max-width: 700px; /* Increased max width */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  overflow: auto; /* Ensures scroll if content overflows */
+  max-height: 80vh; /* Added to prevent overflow beyond viewport */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
+  font-size: 16px; /* Slightly larger font for readability */
+  line-height: 1.8; /* Improved line spacing */
+  letter-spacing: 0.5px; /* Slightly spaced letters for better readability */
+}
+
+/* Specific adjustment for "Our Services" hover box */
+.services-hover-box {
+  left: calc(50% - 50mm); /* Move 20mm more to the left */
+}
+
+.nav-item:hover .hover-box {
+  display: block;
+}
+
+.hover-box h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #004466;
+  font-size: 20px; /* Larger heading size */
+  font-weight: bold;
+  letter-spacing: 1px; /* Add spacing for headings */
+}
+
+/* Styling for paragraphs and lists inside hover-box */
+.hover-box p,
+.hover-box ul {
+  font-size: 16px; /* Slightly larger font size */
+  line-height: 1.8; /* Better line spacing */
+  color: #444; /* Softer text color for better readability */
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+/* Styling for list items */
+.hover-box ul {
+  list-style: disc; /* Add bullet points for better structure */
+  padding-left: 20px; /* Indent list items */
+}
+
+.hover-box ul li {
+  margin-bottom: 10px;
+}
+
+/* Add hover effect for links inside hover-box */
+.hover-box a {
+  color: #0066cc; /* Blue color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hover-box a:hover {
+  text-decoration: underline; /* Underline on hover for clarity */
+}
+
+.banner img {
+  width: 100%;
+  height: 90vh;
+  display: blocandk;
+}
+
+.footer {
+  text-align: center;
+  background-color: #003344;
+  color: white;
+  padding: 15px;
+}
