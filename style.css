@@ -50,7 +50,7 @@ nav a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 30px;
+  top: 25px;
   left: 0;
   background: white;
   padding: 15px;
