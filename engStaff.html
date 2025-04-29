@@ -8,6 +8,58 @@
   <link rel="icon" type="image/png" href="ra.jpeg">
   <style>
     
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .logo img {
+    height: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav a {
+    font-weight: 500;
+    padding: 8px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #d93025;
+  }
+  
+    
   </style>
 </head>
 <body>
